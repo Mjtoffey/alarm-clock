@@ -6,14 +6,18 @@ function updateTime() {
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
         
-    display.innerText=`${hour} : ${minutes} : ${seconds}`
+    display.innerText=(`${hour} : ${minutes} : ${seconds}`)
 }
 
-function formatTime(time) {
-    if ( time < 10 ) {
-        return `0${hour} : 0${minutes} : 0${seconds}`
+function formatTime(i) {
+    if ( getMinutes, getSeconds < 10 ) {
+        time = "0" + getMinutes, getSeconds;
+        return time;
+
     }
-    return time;
+    else {
+        return time;
+    }
 }
 
 setInterval(updateTime, 1000);
