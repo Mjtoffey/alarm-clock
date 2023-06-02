@@ -1,23 +1,11 @@
-function updateTime() {
-    const display = document.getElementById('clock');
-    const date = new Date();
-        console.log(display)
-    const hour = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
-        
-    display.innerText=(`${hour} : ${minutes} : ${seconds}`)
-}
+//grabs local time 
+let time = document.getElementById('clock');
 
-function formatTime(i) {
-    if ( getMinutes, getSeconds < 10 ) {
-        time = "0" + getMinutes, getSeconds;
-        return time;
+// shows the clock on the page
+setInterval(() => {
+    let d = new Date ();
+    time.innerHTML = d.toLocaleTimeString();
+},1000)
 
-    }
-    else {
-        return time;
-    }
-}
-
-setInterval(updateTime, 1000);
+// alert 
+setTimeout(function () { alert("get up and move."); }, 10000); // thousands refers to milliseconds
