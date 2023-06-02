@@ -8,4 +8,4 @@ setInterval(() => {
 },1000)
 
 // alert 
-setTimeout(function () { alert("get up and move."); }, 10000); // thousands refers to milliseconds
+setTimeout(function () { alert("get up and move."); }, 20000); // thousands refers to milliseconds (20,000 is 20 seconds)
