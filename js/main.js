@@ -11,7 +11,7 @@ function updateTime() {
 
 function formatTime(time) {
     if ( time < 10 ) {
-        return `0${time}`
+        return `0${hour} : 0${minutes} : 0${seconds}`
     }
     return time;
 }
